@@ -18,7 +18,6 @@ function UserList(props){
 
   return (
     <StyledWrapper>
-
       {list}
     </StyledWrapper>
   )

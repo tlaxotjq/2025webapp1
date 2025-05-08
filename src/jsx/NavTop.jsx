@@ -6,7 +6,6 @@ const StyledWrapper = styled.div`
   height: 60px;
   background-color: #ffffff;
   position: fixed;
-  margin-bottom: 60px;
   left: -20px;
   display: flex;
   place-items: center;
