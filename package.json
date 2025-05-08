@@ -2,7 +2,7 @@
   "name": "mini-blog",
   "private": true,
   "version": "0.0.0",
-  "homepage":"https://tlaxotjq.github.io/2025webapp1/",
+  "homepage": "https://tlaxotjq.github.io/2025webapp1/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "firebase": "^11.6.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
