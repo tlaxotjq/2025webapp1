@@ -2,7 +2,7 @@
   "name": "mini-blog",
   "private": true,
   "version": "0.0.0",
-  "homepage":"https://github.com/tlaxotjq/2025webapp1",
+  "homepage":"https://tlaxotjq.github.io/2025webapp1/",
   "type": "module",
   "scripts": {
     "dev": "vite",

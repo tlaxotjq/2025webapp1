@@ -12,6 +12,7 @@ const StyledWrapper = styled.div`
   width: 320px;
   height: 100vh;
   border-left: 1px solid #222222;
+  z-index: 3;
 `
 
 const StyledList = styled.div`

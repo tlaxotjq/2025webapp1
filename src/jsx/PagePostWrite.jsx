@@ -8,7 +8,7 @@ import TextInput from './TextInput.jsx'
 import { db } from '../firebase.js'
 import { useUserContext } from "../userContext.jsx";
 import LeftNav from './NavLeft.jsx'
-
+import UserName from './UserName.jsx'
 const Inputarea = styled.div`
 width: 600px;
 margin-left: auto;
@@ -17,6 +17,7 @@ display: flex;
 flex-direction: column;
 `
 const Infoarea = styled.div`
+margin-top: 80px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 32px;
@@ -95,15 +96,13 @@ function PostWritePage(props){
         sun: false,
       });
     } else {
-      // 나머지 체크 클릭 시 → 전체 선택 해제
       setCheckedDay((prev) => {
         const updated = {
           ...prev,
-          [whenday]: !prev[whenday],  // 선택/해제 toggle
-          none: false,        // 요일무관 해제
+          [whenday]: !prev[whenday],  
+          none: false,    
         };
-  
-        // 모든 요일이 false면 → 자동으로 '요일무관' true로
+
         const isAllFalse = Object.keys(updated).every((k) => k === 'none' || updated[k] === false);
         if (isAllFalse) {
           updated.none = true;
@@ -144,7 +143,7 @@ function PostWritePage(props){
       <TopNav pageTitle="글을 작성하세요." buttonTitle="게시하기" onClick={(e)=>{ writePost() }}></TopNav>
     <Inputarea>
       <Infoarea>
-        <TextInput title="작성자" description={userId} type="."></TextInput>
+        <TextInput title="작성자" description={<UserName userId={userId}></UserName>} type="."></TextInput>
         <TextInput title="작성일" description={formattedDate} type="." height="56" value={formattedDate} ></TextInput>
       </Infoarea>
       <TextInput title="관련요일" description="*중복선택가능" type="." height="56" value={content}></TextInput>

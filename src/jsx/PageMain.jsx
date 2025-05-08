@@ -10,6 +10,7 @@ import { db } from '../firebase.js'
 import LeftNav from './NavLeft.jsx'
 
 const Dayform =styled.form`
+
     height: 40px;
     width: 100%;
     display: flex;
@@ -17,7 +18,7 @@ const Dayform =styled.form`
     align-items: flex-end;
     line-height: 240%;
     margin-bottom: 12px;
-    margin-top: 40px;
+    margin-top: 80px;
     & > p {
         margin: 0;
         padding: 0;

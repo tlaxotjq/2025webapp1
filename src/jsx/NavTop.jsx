@@ -5,7 +5,8 @@ const StyledWrapper = styled.div`
   width: calc(100% + 40px);
   height: 60px;
   background-color: #ffffff;
-  position: relative;
+  position: fixed;
+  margin-bottom: 60px;
   left: -20px;
   display: flex;
   place-items: center;

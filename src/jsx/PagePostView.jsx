@@ -15,6 +15,7 @@ const StyledWrapper =styled.div`
   flex-direction: row;
   justify-content: space-between;
   gap: 0px;
+
 `
 const StyledContent =styled.div`
   flex: 1;

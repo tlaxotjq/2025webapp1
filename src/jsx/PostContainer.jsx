@@ -8,6 +8,7 @@ const StyledWrapper = styled.div`
     margin-right:auto;
     position: relative;
     box-sizing: border-box;
+    margin-top: 100px;
 `
 
 const StyledTitle = styled.div`

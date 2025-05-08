@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import styled from 'styled-components'
 import './index.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import LeftNav from './jsx/NavLeft.jsx'
 
@@ -25,7 +25,7 @@ const StyledWrapper =styled.div`
 
 createRoot(document.getElementById('root')).render(
   <UserContextProvider>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter basename={import.meta.env.BASE_URL}>
       <StyledWrapper>
         <Routes>
         <Route index element={<MainPage></MainPage>} />
@@ -33,6 +33,6 @@ createRoot(document.getElementById('root')).render(
         <Route path="post/:id" element={<PostViewPage></PostViewPage>} />
         </Routes>
       </StyledWrapper>
-    </BrowserRouter>
+    </HashRouter>
     </UserContextProvider>
 )
